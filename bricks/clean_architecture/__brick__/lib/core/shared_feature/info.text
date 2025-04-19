@@ -1,0 +1,23 @@
+# Shared Feature
+
+## Overview
+The `shared_feature` folder contains common logic and components that are used across multiple features in the application. This includes shared BLoCs, repositories, services, and other utilities that are reused to maintain consistency and reduce code duplication.
+
+## Contents
+- **bloc/**: Contains the shared BLoC classes, events, and states.
+  - `shared_bloc.dart`: The main BLoC class that handles shared logic.
+  - `shared_event.dart`: Defines the events for the shared BLoC.
+  - `shared_state.dart`: Defines the states for the shared BLoC.
+
+- **repositories/**: Contains the shared repository classes.
+  - `shared_repository.dart`: The repository that handles API calls and data fetching logic.
+
+- **services/**: Contains shared service classes that provide additional functionality.
+  - `api_service.dart`: The service that handles API interactions.
+
+## Usage
+To use the shared components in your feature, import the necessary classes from the `shared_feature` folder. For example:
+
+```dart
+import 'package:your_app/shared_feature/bloc/shared_bloc.dart';
+import 'package:your_app/shared_feature/repositories/shared_repository.dart';
