@@ -20,3 +20,6 @@ class AuthencationException implements Exception{
     return message;
   }
 }
+
+
+class CacheException implements Exception{}

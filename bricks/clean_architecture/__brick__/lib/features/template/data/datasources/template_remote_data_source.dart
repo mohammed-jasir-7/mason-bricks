@@ -1,11 +1,12 @@
 
 import '../models/template_model.dart';
 import 'package:{{name}}/core/params/params.dart';
-
+import 'package:injectable/injectable.dart';
 abstract class TemplateRemoteDataSource {
   Future<TemplateModel> getTemplate({required TemplateParams templateParams});
 }
-
+ 
+ @Injectable(as: TemplateRemoteDataSource)
 class TemplateRemoteDataSourceImpl implements TemplateRemoteDataSource {
 //  final Dio dio;
 

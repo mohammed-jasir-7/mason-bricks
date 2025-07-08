@@ -1,11 +1,13 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:{{name}}/core/errors/global_error_handler.dart';
-import 'package:{{name}}/main.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../../../../clean_architecure/__brick__/lib/injectable.dart';
+import '../../injectable.dart';
+import '../../main.dart';
 import '../api/api_request_queue.dart';
+import '../errors/global_error_handler.dart';
 
 
 ///get network info

@@ -1,7 +1,8 @@
 
 
 import 'package:couple_squad/core/constants/constants.dart';
-import 'package:couple_squad/features/{{name.lowerCase()}}/domain/entities/{{name.lowerCase()}}_entity.dart';
+
+import '../../domain/entities/{{name.lowerCase()}}_entity.dart';
 
 class {{name.pascalCase()}}Model extends {{name.pascalCase()}}Entity {
   const {{name.pascalCase()}}Model({

@@ -3,7 +3,8 @@ import 'package:{{name}}/core/params/params.dart';
 import 'package:{{name}}/features/template/domain/entities/template_entity.dart';
 import 'package:{{name}}/features/template/domain/repositories/template_repository.dart';
 import 'package:dartz/dartz.dart';
-
+import 'package:injectable/injectable.dart';
+@injectable
 class GetTemplate {
   final TemplateRepository templateRepository;
 

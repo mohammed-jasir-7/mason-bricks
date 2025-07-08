@@ -1,5 +1,5 @@
 
-
+import 'package:injectable/injectable.dart';
 import 'package:{{name}}/core/connection/network_info.dart';
 import 'package:{{name}}/core/errors/exceptions.dart';
 import 'package:{{name}}/core/errors/failure.dart';
@@ -9,7 +9,7 @@ import 'package:{{name}}/features/template/data/datasources/template_remote_data
 import 'package:{{name}}/features/template/data/models/template_model.dart';
 import 'package:{{name}}/features/template/domain/repositories/template_repository.dart';
 import 'package:dartz/dartz.dart';
-
+@Injectable(as: TemplateRepository)
 class TemplateRepositoryImpl implements TemplateRepository {
   final TemplateRemoteDataSource remoteDataSource;
   final TemplateLocalDataSource localDataSource;

@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'package:injectable/injectable.dart';
 import 'package:{{name}}/core/errors/exceptions.dart';
 import '../models/template_model.dart';
 class SharedPreferences{}
@@ -10,6 +10,7 @@ abstract class TemplateLocalDataSource {
 
 const cachedTemplate = 'CACHED_TEMPLATE';
 
+@Injectable(as: TemplateLocalDataSource)
 class TemplateLocalDataSourceImpl implements TemplateLocalDataSource {
   final SharedPreferences sharedPreferences;
 

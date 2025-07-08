@@ -1,16 +1,10 @@
 
 
+import 'package:flutter/material.dart';
+
 class RouteGenerator {
   static String? route;
-  RouteGenerator() {
-    var storage = LocalStorageImpl();
-
-    storage
-        .getString(key: "route")
-        .then((value) => value.fold((l) => null, (r) {
-              route = r;
-            }));
-  }
+  RouteGenerator() ;
   static Route<dynamic>? generateRoute(RouteSettings settings) {
     var args = settings.arguments;
     

@@ -3,9 +3,9 @@
 # To learn more, visit https://docs.brickhub.dev.
 bricks:
   clean_architecture:
-    path: bricks/clean_architecture
+    path: ../mason-bricks/bricks/clean_architecture
   clean_feature:
-    path: bricks/clean_feature
+    path: ../mason-bricks/bricks/clean_feature
   # Bricks can be imported via version constraint from a registry.
   # Uncomment the following line to import the "hello" brick from BrickHub.
   # hello: 0.1.0+2
