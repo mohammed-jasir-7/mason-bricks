@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-void main() {
+import 'package:painter/injectable.dart';
+void main()async {
+   await configureDependencies("dev");
   runApp(const MyApp());
 }
 
